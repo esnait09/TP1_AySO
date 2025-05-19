@@ -1,0 +1,43 @@
+ssh-keygen -t ed25519 -C "caiponti3@gmail.com"
+cat ~/.ssh/id_ed25519.pub
+cd
+mkdir repogit
+ls
+cd repogit/
+git clone git@github.com:esnait09/TP1_AySO.git
+cd TP1_AySO/
+ls -l
+cat etc/os -release
+cat /etc/os-release
+man grep
+ignore case
+/ignore case
+grep "HOME_URL" /etc/os-release
+grep -i "home_url" /etc/os-release
+whoami
+echo "usuario:$(whoami)" > datos_usuario.txt
+cat datos_usuario.txt 
+git add datos_usuario.txt 
+git config --global user.email "caiponti3@gmail.com"
+git config --global user.name "matias aquino"
+git commit -m "feat: agregar archivo datos_usuario.txt"
+git push origin main
+git status
+grep "model name" /proc/cpuinfo | head -n1 >> datos_usuario.txt
+ls
+cat datos_usuario.txt 
+git add datos_usuario.txt 
+git commit "feat: Añadiendo información de CPU"
+git -M commit "feat: Añadiendo información de CPU"
+cat datos_usuario.txt 
+cat <<EOF >> README.md
+Alumno: Matías Aquino
+División: 314
+Turno: Noche
+EOF
+
+cat README.md 
+git add README.md datos_usuario.txt 
+git commit -m "docs: Añadiendo Readme y datos de usuario"
+git push origin main
+history -a
